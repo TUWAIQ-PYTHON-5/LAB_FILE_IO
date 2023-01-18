@@ -1,0 +1,22 @@
+raghad
+nasser
+
+assel
+moohammed
+
+hh
+kkk
+
+rr
+gg
+
+f
+v
+exit
+& "C:/Users/Raghad nasser/AppData/Local/Programs/Python/Python311/python.exe" "c:/Users/Raghad nasser/python-camp/LAB_FILE_IO/lab file.py"
+exit
+
+jj
+
+j
+
