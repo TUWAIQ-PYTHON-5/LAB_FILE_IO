@@ -1,29 +1,37 @@
-flag = True
-while flag:
+import os
+import shutil
 
-        show_msg =  input("do you want to add a new To-Do item ? y / n  or exit to close : ")
-        if show_msg == "y":
-            print("-------------------------")
-            new_to_do = input("type in new To-Do item : ")
-            file = open('to_do.txt', 'a+' , encoding='utf-8')
-            file.write(new_to_do+'\n')
-            file.close()
 
-        elif show_msg == "n":
-             print("-------------------------")
-             show_list = input("do you want to list your To-Do items ?  : ")
-             print("-------------------------")
-             if show_list == 'y':
-                files = open('to_do.txt' , 'r', encoding='utf-8') 
-                print(files.read())
-                print("-------------------------")
-                files.close()
+user_awnser = ""
 
-        elif show_msg == "exit":
-                flag = False
-                print("thank you for using the To-Do program, come back again soon")
-                print("-------------------------")
-           
+
+   
+
+
+    
+while user_awnser != "exit":
+    user_awnser = input("do you want to add a new To-Do item ? y for yes : n for No : ")
+    if user_awnser == "y":
+            file_name =open('example.txt'  , "a+" , encoding="utf-8") 
+            file_name.writelines([ input("please enter your task" "\n") , "   TASK YOU HAVE TO DO""\n" ])
+            file_name.close()
+
+
+    elif user_awnser == "n":
+        show_user_task= input("do you want to list your To-Do items ? : ")
+
+        if show_user_task == "y":
+            file_name = open("example.txt", "r", encoding="utf-8")
+            content = file_name.read()
+            print("your do lis is :" "\n" , content)
+            file_name.close()
+
+               
+else:
+
+    print("thank you for using the To-Do program, come back again soon")
+
+             
 
        
     
